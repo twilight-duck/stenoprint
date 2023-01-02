@@ -99,6 +99,27 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .about__studio-video-info {
+        order: 0;
+    }
+
+    .about__studio-video-wrapper {
+        gap: 50px;
+    }
+
+    .activity__wrapper{
+        justify-content: center;
+    }
+
+    .about__studio-wrapper{
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .about__studio-header {
+        margin-bottom: 60px;
+    }
 }
 
 @media screen and (max-width: 1296px){
