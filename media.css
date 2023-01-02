@@ -79,6 +79,26 @@
     .popup-image img{
         height: 60% ;
     }
+
+    .banner__card-wrapper{
+        justify-content: center;
+    }
+    .collection__wrapper{
+        justify-content: center;
+    }
+
+    .reviews__wrapper{
+        justify-content: center;
+    }
+
+    .materials__wrapper{
+        justify-content: center;
+    }
+
+    .reviews__video-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 1296px){
@@ -135,8 +155,37 @@
         right: 30px;
     }
 
-    .popup-image img{
-        max-width: ;
+    
+
+    #banner::after{
+        display: none;
+    }
+
+    #banner::before{
+        background: url(assets/banner-background.png) no-repeat left / cover;
+    }
+
+    #design__form{
+        width: 98%;
+    }
+
+    .design__form-title {
+        font-size: 36px;
+    }
+
+    .design__form-background{
+        width: 68%;
+        height: 68%;
+    }
+
+    .design__form-background-shape{
+        width: 48%;
+        height: 48%;
+    }
+
+    .design__form-background-shape-orange{
+        width: 28%;
+        height: 28%;
     }
 }
 
@@ -157,6 +206,7 @@
 
     .description__title{
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .description__text:first-of-type{
@@ -203,6 +253,32 @@
         font-size: 14px;
         max-width: 212px;
         padding: 11px 40px;
+    }
+
+    .design__form-background, .design__form-background-shape, .design__form-background-shape-orange{
+       display: none;
+    }
+
+    #design__form {
+        width: 63%;
+        background: radial-gradient(99.36% 102.39% at 100% 76.24%, rgba(211, 229, 207, 0.2) 0%, rgba(211, 229, 207, 0.4) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(68.66% 43.09% at 0% 100%, rgba(207, 213, 229, 0.34) 0%, rgba(207, 213, 229, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFEFC;
+    }
+    .design__form-wrapper{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .reviews__video-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .materials__top{
+        gap: 417px;
+    }
+
+    .materials__top-title::after{
+        width: 346px;
     }
 }
 
@@ -259,7 +335,13 @@
     
 }
 
+.materials__top-title::after {
+    width: 249px;
+}
 
+.materials__top {
+    gap: 301px;
+}
 
 }
 
@@ -329,6 +411,41 @@
 
 .popup__content{
 
+}
+
+.banner__slider-bar{
+    bottom: 34px;
+    left: 22%;
+}
+
+.banner__slider-bar-active{
+    bottom: 34px;
+    left: 22%;
+}
+
+#collections{
+    display: none;
+}
+
+.design__form-title{
+    font-size: 24px;
+}
+
+.materials__top {
+    gap: 212px;
+}
+
+.materials__top-title::after {
+    width: 148px;
+}
+
+.video__image {
+    width: 95%;
+}
+
+.video__image-btn{
+    top: 115px;
+    left: 243px;
 }
 
 }
@@ -458,8 +575,46 @@
     display: none;
 }
 
+.banner__slider-bar {
+    bottom: 37px;
+    left: 26%;
 }
 
+.banner__slider-bar-active {
+    bottom: 37px;
+    left: 26%;
+}
+
+.reviews__item:not(:first-of-type){
+    display: none;
+}
+
+.materials__top {
+    display: none;
+}
+
+.materials__item:not(:first-of-type) {
+    display: none;
+}
+
+.usability__subtitle{
+    text-align: left;
+}
+
+.video__image {
+    width: 100%;
+}
+
+#design__form {
+    width: 67%;
+    padding: 37px 27px;
+}
+
+.design__form-title {
+    font-size: 20px;
+}
+
+}
 @media screen and (max-width: 415px){
     .products__slider-bar {
         width: 58%;
@@ -486,5 +641,69 @@
 
     .mobile-search-form input{
         max-width: 320px;
+    }
+
+    .banner__slider-bar{
+        bottom: 52px;
+        left: 35%;
+    }
+
+    .banner__slider-bar-active {
+        bottom: 52px;
+        left: 35%;
+    }
+
+    .video__image {
+        width: 100%;
+    }
+
+    .video__image-btn {
+        top: 69px;
+        left: 147px;
+        padding: 11px;
+    }
+
+    .video__title{
+        font-size: 24px;
+        text-align: left;
+    }
+    .reviews__video-wrapper{
+        gap: 30px;
+    }
+
+    .banner__description-card:not(:first-of-type){
+        display: none;
+
+    }
+
+    .description__title{
+        text-align: left;
+        font-size: 26px;
+    }
+
+    .collection__item:not(:first-of-type){
+        display: none;
+    }
+
+    #design__form {
+        width: 87%;
+        padding: 19px 11px;
+    }
+
+    .design__form-title {
+        font-size: 19px;
+    }
+
+    .blog__item-badge{
+        top: 122px;
+        left: 30px;
+    }
+
+    .blog__item-title{
+        font-size: 16px;
+    }
+
+    .blog__item-text{
+        font-size: 14px;
     }
 }
