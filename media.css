@@ -38,6 +38,7 @@
 
     .facilities__title{
         text-align: center;
+        margin: 30px auto;
     }
 
     .products__links{
@@ -119,6 +120,18 @@
 
     .about__studio-header {
         margin-bottom: 60px;
+    }
+
+    .faq__wrapper {
+        display: flex;
+        gap: 10px;
+       flex-direction: column;
+        
+    }
+
+    .faq__item{
+       min-width: 325px;
+        
     }
 }
 
@@ -207,6 +220,18 @@
     .design__form-background-shape-orange{
         width: 28%;
         height: 28%;
+    }
+
+    .services__figure-wrapper{
+        display: none;
+    }
+
+    .services__figure-wrapper:last-of-type{
+        display: none;
+    }
+
+    .studio__services-block{
+        flex-direction: column;
     }
 }
 
@@ -300,6 +325,17 @@
 
     .materials__top-title::after{
         width: 346px;
+    }
+
+    #services__figure{
+        display: none;
+    }
+
+    .how-we-work__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
     }
 }
 
@@ -633,6 +669,10 @@
 
 .design__form-title {
     font-size: 20px;
+}
+
+.services__breadcrumbs{
+    gap: 0;
 }
 
 }
