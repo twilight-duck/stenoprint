@@ -1917,6 +1917,13 @@ main {
     flex-wrap: wrap;
 }
 
+.breadcrumbs__item:not(:last-of-type):after{
+    content: '/';
+    position: absolute;
+    bottom: 0;
+    left: 34px;
+}
+
 .services__breadcrumbs-item:not(:last-of-type):after{
     content: '/';
     position: absolute;
